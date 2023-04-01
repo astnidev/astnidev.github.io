@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<style>
+    body {
+        background-image: url(https://cdn.discordapp.com/attachments/797223196029616129/1042993004518064178/giphy.gif);
+        margin: 0px;
+        min-height: 100%;
+        width: 100%;
+    }
+    .container {
+        width: 75%;
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 8px;
+        padding: 8px;
+        grid-template-areas: 
+            "sidebar header header"
+            "sidebar content content"
+            "sidebar content content";
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header {
+        grid-area: header;
+        padding: 8px;
+        background-color: #1d162f;
+        color: #d7bb43;
+    }
+    .headerbuttons {
+        text-align: right;
+    }
+    .content {
+        grid-area: content;
+        padding: 0 8px;
+        background-color: #1d162f;
+        color: #d7bb43;
+    }
+    .sidebar {
+        grid-area: sidebar;
+        padding: 0 8px;
+        background-color: #1d162f;
+        color: #d7bb43;
+    }
+    .title {
+        color: #ebdb57;
+        text-shadow: #af7b1f;
+    }
+
+    /* CSS */
+    .button-7 {
+    background-color: #3f3064;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.342) 0 0 6px 0 inset;
+    box-sizing: rgba(0, 0, 0, 0.425);
+    color: #f8ea6a;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: 0;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+    }
+
+    .button-7:hover,
+    .button-7:focus {
+    background-color: #2d2347;
+    }
+
+    .button-7:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+    }
+
+    .button-7:active {
+    background-color: #261e38;
+    box-shadow: none;
+    }
+</style>
+<html>
+    <div class="everything">
+        <div class="container">
+            <div class="header">
+                <img src="https://cdn.discordapp.com/attachments/797223196029616129/1091527033332445264/logo.png" width="50%" height="width">
+                <p class="headerbuttons">
+                    <button class="button-7" role="button" onclick="alert('YOUVE CLICKED THE BUTTON')">Home</button>
+                    <button class="button-7" role="button" onclick="alert('YOUVE CLICKED THE BUTTON')">Remnants of Flesh</button>
+                    <button class="button-7" role="button" onclick="alert('YOUVE CLICKED THE BUTTON')">PixelJungle Games</button>
+                    <button class="button-7" role="button" onclick="alert('YOUVE CLICKED THE BUTTON')">Contact</button>
+                </p>
+            </div>
+            <div class="content">
+                <h1 class="title">content</h1>
+                <hr>
+                <p>this is the content of the page, where you'll see the content of the page</p>
+            </div>
+            <div class="sidebar">
+                <img src="https://cdn.discordapp.com/attachments/797223196029616129/1091526593031180378/index.gif" width="100%" height="width" padding="0px 0px">
+                <p>this is where i'll have the index for all the pages</p>
+            </div>
+        </div>
+    </div>
+</html>
