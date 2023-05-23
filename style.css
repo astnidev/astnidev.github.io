@@ -20,6 +20,7 @@ a:hover {
 a:active {
     color: #fdc220;
 }
+
 .container {
     width: 75%;
     display: grid;
@@ -52,11 +53,12 @@ a:active {
 }
 .sidebar {
     grid-area: sidebar;
-    padding: 0 8px;
     background-color: #1d162f;
     color: #ecd675;
     text-align: center;
-    width: 93%;
+    width: 100%;
+    position: relative;
+    top: -16px;
 }
 .sidebar-index {
     list-style-type: none;
@@ -68,8 +70,9 @@ a:active {
 .sidebar-index-item {
     background-color: rgb(37, 30, 56);
     border: 3px solid #1d162f;
-    padding: 2px 0px;
+    padding: 2px;
     text-align: center;
+    color: #ecd675;
 }
 .title {
     color: #d7bb43;
@@ -118,4 +121,22 @@ a:active {
 .button-7:active {
     background-color: #261e38;
     box-shadow: none;
+}
+
+.blogcontainer {
+    display: grid;
+    grid-template-columns: 0.35fr 1fr 1fr;
+    grid-template-rows: 0.35fr;
+    gap: 8px;
+    padding: 16px;
+    grid-template-areas:
+        "thumbnail blogcontent blogcontent"
+}
+
+.thumbnail {
+    grid-area: thumbnail;
+}
+
+.blogcontent {
+    grid-area: blogcontent;
 }
